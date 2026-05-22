@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Plataforma Imobiliária com Contratos | Regras de Negócio</title>
+  <title>DRATOS | Inteligência Contratual Imobiliária</title>
   <style>
     :root {
       --bg: #f5f7fb;
@@ -308,6 +308,24 @@
       font-weight: 800;
       margin-bottom: 8px;
     }
+    .step-due,
+    .step-legal {
+      border-color: rgba(23, 109, 122, .35);
+      background: linear-gradient(180deg, #f7fcfd, #fff);
+      box-shadow: inset 0 3px 0 var(--brand);
+    }
+    .step-legal {
+      border-color: rgba(180, 123, 52, .38);
+      box-shadow: inset 0 3px 0 var(--accent);
+    }
+    .step-due small,
+    .step-legal small {
+      width: 34px;
+      border-radius: 7px;
+      font-size: 11px;
+    }
+    .step-due small { background: var(--brand); }
+    .step-legal small { background: var(--accent); }
     .step strong { display: block; margin-bottom: 4px; }
     .step span { color: var(--muted); font-size: 13px; }
 
@@ -445,26 +463,26 @@
     <aside>
       <div class="brand">
         <small>Protótipo executivo</small>
-        <strong>Plataforma Imobiliária com Contratos</strong>
-        <span class="muted">Regras anonimizadas extraídas de contratos-base de locação, prestação de serviços e compra/venda.</span>
+        <strong>DRATOS | Inteligência Contratual</strong>
+        <span class="muted">CLM 2.0 para governança jurídica, due diligence, sala contratual e assinatura em operações imobiliárias.</span>
       </div>
       <input class="nav-search" id="search" type="search" placeholder="Buscar módulo, regra ou cadastro">
       <nav id="nav">
         <a href="#visao"><span>01</span><em>Visão geral</em></a>
-        <a href="#cadastros"><span>02</span><em>Cadastros</em></a>
-        <a href="#imoveis"><span>03</span><em>Imóveis</em></a>
+        <a href="#cadastros"><span>02</span><em>Dossiês jurídicos</em></a>
+        <a href="#imoveis"><span>03</span><em>Dossiê do imóvel</em></a>
         <a href="#locacao"><span>04</span><em>Processo de locação</em></a>
-        <a href="#regras-locacao"><span>05</span><em>Regras de locação</em></a>
+        <a href="#regras-locacao"><span>05</span><em>Controles de locação</em></a>
         <a href="#venda"><span>06</span><em>Compra e venda</em></a>
-        <a href="#regras-venda"><span>07</span><em>Regras de venda</em></a>
-        <a href="#servicos"><span>08</span><em>Serviços imobiliários</em></a>
-        <a href="#calculos"><span>09</span><em>Cálculos contratuais</em></a>
+        <a href="#regras-venda"><span>07</span><em>Controles de venda</em></a>
+        <a href="#servicos"><span>08</span><em>Governança jurídica</em></a>
+        <a href="#calculos"><span>09</span><em>Parâmetros legais</em></a>
         <a href="#documentos"><span>10</span><em>Contratos e documentos</em></a>
-        <a href="#vistorias"><span>11</span><em>Vistorias</em></a>
+        <a href="#vistorias"><span>11</span><em>Evidências</em></a>
         <a href="#vitrine"><span>12</span><em>Vitrine digital</em></a>
-        <a href="#crm"><span>13</span><em>CRM</em></a>
+        <a href="#crm"><span>13</span><em>Workflow CLM</em></a>
         <a href="#perfis"><span>14</span><em>Permissões</em></a>
-        <a href="#alertas"><span>15</span><em>Alertas</em></a>
+        <a href="#alertas"><span>15</span><em>Compliance</em></a>
         <a href="#assinatura"><span>16</span><em>Assinatura eletrônica</em></a>
         <a href="#nfr"><span>17</span><em>Não funcionais</em></a>
         <a href="#mvp"><span>18</span><em>MVP e fases</em></a>
@@ -475,57 +493,57 @@
       <header class="hero">
         <div class="hero-panel">
           <small>Base para desenvolvimento de software</small>
-          <h1>Mapa operacional para imobiliária com contratos</h1>
-          <p>Documentação visual para transformar cláusulas contratuais em cadastros, fluxos, regras de negócio, alertas e permissões. Dados pessoais, endereços, contas e identificadores reais foram substituídos por exemplos fictícios.</p>
+          <h1>Central inteligente de governança contratual imobiliária</h1>
+          <p>Documentação visual para transformar cláusulas contratuais em workflows jurídicos, due diligence, sala de negociação, aprovações, compliance, assinatura e rastreabilidade. Dados pessoais, endereços, contas e identificadores reais foram substituídos por exemplos fictícios.</p>
         </div>
         <div class="scope-card">
           <h2>Escopo desta versão</h2>
-          <p>Inclui locação residencial, prestação de serviços imobiliários, compra e venda, contratos, vistoria, vitrine, CRM, assinatura e automações.</p>
-          <p><strong>Fora do escopo:</strong> gestão financeira completa. Permanecem apenas cálculos contratuais necessários para regras, cobranças e conferências.</p>
+          <p>Inclui governança de locação residencial, prestação de serviços imobiliários, compra e venda, sala jurídica, due diligence, biblioteca contratual, assinatura e automações de compliance.</p>
+          <p><strong>Foco DRATOS:</strong> CLM 2.0, due diligence, sala jurídica, governança documental, compliance, assinatura e rastreabilidade.</p>
           <span class="badge legal">validar com jurídico quando indicado</span>
         </div>
       </header>
 
       <div class="kpi-grid">
         <div class="kpi"><strong>3</strong><span>contratos-base analisados</span></div>
-        <div class="kpi"><strong>18</strong><span>módulos funcionais mapeados</span></div>
+        <div class="kpi"><strong>CLM</strong><span>workflow jurídico estruturado</span></div>
         <div class="kpi"><strong>0</strong><span>dado pessoal real publicado</span></div>
         <div class="kpi"><strong>MVP</strong><span>entregável por fases</span></div>
       </div>
 
-      <section id="visao" data-title="visão geral negócio papéis intermediação administração locação compra venda prestação serviços">
+      <section id="visao" data-title="visão geral negócio papéis intermediação governança jurídica locação compra venda prestação serviços clm">
         <div class="section-head">
           <small>01</small>
           <h2>Visão Geral do Negócio</h2>
-          <p>A plataforma organiza a operação imobiliária do primeiro contato até contrato assinado, entrega de chaves, administração operacional e encerramento.</p>
+          <p>A plataforma faz a gestão da operação imobiliária do primeiro contato até contrato assinado, entrega de chaves e encerramento.</p>
         </div>
         <div class="section-body">
           <div class="grid-3">
             <article class="card">
-              <h3>Intermediação</h3>
-              <p>Atividade de aproximar partes, divulgar o imóvel, registrar interessados, conduzir propostas e apoiar a formalização do contrato. Pode gerar comissão de corretagem.</p>
+              <h3>Intermediação governada</h3>
+              <p>Atividade de aproximar partes, registrar interessados, conduzir propostas e apoiar a formalização contratual com rastreabilidade, aprovações e evidências.</p>
             </article>
             <article class="card">
-              <h3>Administração de locação</h3>
-              <p>Gestão recorrente da locação ativa: comunicação com locatário e proprietário, boletos quando integrados, repasses quando no escopo, reajustes, garantias, notificações e vistorias.</p>
+              <h3>CLM imobiliário</h3>
+              <p>Ciclo contratual com análise cadastral, due diligence, sala jurídica, revisão de minutas, validação de anexos, assinatura e encerramento documental.</p>
             </article>
             <article class="card">
               <h3>Compra e venda</h3>
-              <p>Fluxo de proposta, sinal, análise documental, eventual financiamento, escritura, registro, posse e troca de titularidade de encargos.</p>
+              <p>Fluxo de proposta, análise documental, certidões, financiamento quando aplicável, governança de escritura, registro e evidências de conclusão.</p>
             </article>
           </div>
           <div class="table-wrap" style="margin-top:14px">
             <table>
-              <thead><tr><th>Papel</th><th>Função operacional</th><th>Principais interações</th></tr></thead>
+              <thead><tr><th>Papel</th><th>Função no workflow jurídico</th><th>Principais interações</th></tr></thead>
               <tbody>
-                <tr><td><strong>Proprietário / locador</strong></td><td>Autoriza locação, informa dados do imóvel, recebe comunicações e aprova reparos relevantes.</td><td>Contrato de prestação, locação, vistorias, repasses quando aplicável.</td></tr>
+                <tr><td><strong>Proprietário / locador</strong></td><td>Autoriza a negociação, informa dados do imóvel, valida documentos e participa da sala jurídica.</td><td>Contrato de prestação, locação, laudos, anexos e assinatura.</td></tr>
                 <tr><td><strong>Vendedor</strong></td><td>Comprova propriedade, entrega certidões, quita pendências e outorga escritura.</td><td>Proposta, compromisso de compra e venda, cartório.</td></tr>
-                <tr><td><strong>Comprador</strong></td><td>Analisa documentos, paga sinal e saldo, assume tributos após posse e troca titularidades.</td><td>CRM, documentação, financiamento, escritura e registro.</td></tr>
-                <tr><td><strong>Locatário</strong></td><td>Apresenta cadastro, assina contrato e vistoria, paga encargos, conserva o imóvel e devolve chaves.</td><td>Vistoria, garantias, manutenção, desocupação.</td></tr>
-                <tr><td><strong>Fiador / garantia</strong></td><td>Garante obrigações locatícias conforme modalidade aprovada.</td><td>Análise cadastral, assinatura, renovação ou substituição.</td></tr>
-                <tr><td><strong>Imobiliária e corretor</strong></td><td>Divulga, analisa idoneidade, intermedeia, elabora instrumentos e acompanha etapas.</td><td>CRM, vitrine, contratos, assinatura, notificações.</td></tr>
+                <tr><td><strong>Comprador</strong></td><td>Analisa documentos, submete proposta, participa de revisões e comprova etapas de conclusão.</td><td>Pipeline, due diligence, financiamento, escritura e registro.</td></tr>
+                <tr><td><strong>Locatário</strong></td><td>Apresenta cadastro, participa da análise, assina contrato e valida laudo de entrada quando aplicável.</td><td>Due diligence, garantias, laudos e assinatura.</td></tr>
+                <tr><td><strong>Fiador / garantia</strong></td><td>Comprova capacidade e assina obrigações locatícias conforme modalidade aprovada.</td><td>Análise cadastral, compliance e assinatura.</td></tr>
+                <tr><td><strong>Imobiliária e corretor</strong></td><td>Intermedeia, organiza evidências, conduz proposta e acompanha aprovações contratuais.</td><td>Pipeline, vitrine, contratos, sala jurídica e assinatura.</td></tr>
                 <tr><td><strong>Testemunhas</strong></td><td>Assinam documentos quando exigido pelo fluxo.</td><td>Assinatura eletrônica e logs.</td></tr>
-                <tr><td><strong>Administradora, condomínio, prefeitura, cartório e banco</strong></td><td>Fontes externas de cobranças, certidões, registros, financiamentos e titularidades.</td><td>Integrações futuras e checklists manuais no MVP.</td></tr>
+                <tr><td><strong>Condomínio, prefeitura, cartório, banco e bureaus</strong></td><td>Fontes externas de certidões, registros, financiamento, validações e evidências.</td><td>Integrações futuras e checklists de due diligence no MVP.</td></tr>
               </tbody>
             </table>
           </div>
@@ -535,8 +553,8 @@
       <section id="cadastros" data-title="cadastros pessoas proprietários locadores vendedores compradores locatários fiadores corretores imobiliárias testemunhas documentos seguros garantias contratos anúncios">
         <div class="section-head">
           <small>02</small>
-          <h2>Cadastros Necessários</h2>
-          <p>Estrutura cadastral central para evitar duplicidade, controlar papéis múltiplos e reutilizar documentos entre locação e venda.</p>
+          <h2>Dossiês e Cadastros Jurídicos</h2>
+          <p>Estrutura cadastral central para evitar duplicidade, controlar papéis múltiplos e reutilizar evidências entre locação, compra e venda.</p>
         </div>
         <div class="section-body">
           <div class="table-wrap">
@@ -547,12 +565,12 @@
                 <tr><td><strong>Pessoa jurídica</strong></td><td>Razão social fictícia, CNPJ exemplo, representante, contrato social, contatos e endereço.</td><td>Usada para imobiliárias, parceiros, empresas compradoras ou vendedoras.</td><td><span class="badge required">obrigatório</span></td></tr>
                 <tr><td><strong>Papéis imobiliários</strong></td><td>Proprietário, locador, vendedor, comprador, locatário, fiador, corretor, parceiro, testemunha.</td><td>Uma pessoa pode ter mais de um papel sem novo cadastro.</td><td><span class="badge required">obrigatório</span></td></tr>
                 <tr><td><strong>Imóvel</strong></td><td>Tipo, finalidade, status, endereço fictício, matrícula mascarada, áreas, vagas, características, ocupação.</td><td>Núcleo dos fluxos de locação, venda e vitrine.</td><td><span class="badge required">obrigatório</span></td></tr>
-                <tr><td><strong>Condomínio</strong></td><td>Nome, administradora, regras, taxa, vencimentos, contatos e anexos.</td><td>Permite rateios, regras de uso e validação de encargos.</td><td><span class="badge optional">opcional por tipo</span></td></tr>
-                <tr><td><strong>Documentos e certidões</strong></td><td>Tipo, parte relacionada, validade, status, arquivo, responsável e pendência.</td><td>Exige checklist por processo e alerta de vencimento.</td><td><span class="badge required">obrigatório</span></td></tr>
-                <tr><td><strong>Garantia locatícia</strong></td><td>Fiador, seguro-fiança, caução ou outra modalidade; validade; documentos; aprovação.</td><td>Renovar ou substituir quando vencida, recusada ou insuficiente.</td><td><span class="badge required">obrigatório na locação</span></td></tr>
-                <tr><td><strong>Contas de consumo</strong></td><td>Água, energia, gás, internet; titularidade; protocolo; prazo de troca.</td><td>Locatário ou comprador deve trocar titularidade nos prazos configurados.</td><td><span class="badge optional">opcional por operação</span></td></tr>
+                <tr><td><strong>Condomínio</strong></td><td>Nome, regulamento, convenção, contatos institucionais e anexos.</td><td>Apoia validação jurídica, regras de uso e documentos do imóvel.</td><td><span class="badge optional">opcional por tipo</span></td></tr>
+                <tr><td><strong>Documentos e certidões</strong></td><td>Tipo, parte relacionada, validade, status, arquivo, responsável e pendência.</td><td>Exige checklist de due diligence e alerta de validade documental.</td><td><span class="badge required">obrigatório</span></td></tr>
+                <tr><td><strong>Garantia locatícia</strong></td><td>Fiador, seguro-fiança, caução ou outra modalidade; validade; documentos; aprovação.</td><td>Validação jurídica e cadastral antes da assinatura.</td><td><span class="badge required">obrigatório na locação</span></td></tr>
+                <tr><td><strong>Evidências de titularidade</strong></td><td>Protocolos, certidões, comprovantes, registros e anexos de encerramento.</td><td>Comprova marcos do ciclo contratual com trilha auditável.</td><td><span class="badge optional">opcional por operação</span></td></tr>
                 <tr><td><strong>Contratos</strong></td><td>Modelo, partes, objeto, valores de referência, prazos, anexos, status de assinatura.</td><td>Gerado a partir de cadastros e regras parametrizadas.</td><td><span class="badge required">obrigatório</span></td></tr>
-                <tr><td><strong>Vistorias</strong></td><td>Tipo, cômodos, itens, fotos, danos, contestação, assinatura e conclusão.</td><td>Chaves condicionadas ao laudo inicial; saída compara entrada e devolução.</td><td><span class="badge required">obrigatório na locação</span></td></tr>
+                <tr><td><strong>Laudos e evidências</strong></td><td>Tipo, fotos, anexos, apontamentos, contestação, assinatura e conclusão.</td><td>Suporta governança de entrega, recebimento e encerramento contratual.</td><td><span class="badge required">obrigatório na locação</span></td></tr>
                 <tr><td><strong>Anúncios da vitrine</strong></td><td>Título, descrição pública, fotos, valores públicos, SEO, status de publicação.</td><td>Nunca publicar matrícula completa, dados do proprietário ou documentos internos.</td><td><span class="badge required">obrigatório para captação digital</span></td></tr>
               </tbody>
             </table>
@@ -563,15 +581,15 @@
       <section id="imoveis" data-title="cadastro imóveis matrícula cartório inscrição municipal iptu condomínio vagas áreas finalidade status preferência locatário">
         <div class="section-head">
           <small>03</small>
-          <h2>Cadastro de Imóveis</h2>
-          <p>O cadastro precisa atender simultaneamente vitrine comercial, contrato, análise jurídica e operação interna.</p>
+          <h2>Dossiê Jurídico do Imóvel</h2>
+          <p>O cadastro precisa atender simultaneamente vitrine comercial, contrato, análise jurídica e governança documental.</p>
         </div>
         <div class="section-body">
           <div class="grid-4">
             <article class="card"><h3>Identificação</h3><p>Tipo, finalidade, código interno, status, matrícula mascarada, cartório, inscrição municipal e condomínio.</p></article>
             <article class="card"><h3>Características</h3><p>Dormitórios, suítes, banheiros, vagas, área privativa, comum, total, fração ideal e regras de uso.</p></article>
-            <article class="card"><h3>Comercial</h3><p>Descrição pública, fotos, vídeos, tour virtual, destaques, valor de venda, aluguel e pacote quando publicado.</p></article>
-            <article class="card"><h3>Jurídico-operacional</h3><p>Descrição jurídica, documentos, ônus, ocupação, restrições, locação ativa e direito de preferência.</p></article>
+            <article class="card"><h3>Comercial</h3><p>Descrição pública, fotos, vídeos, tour virtual, destaques e valores de referência quando publicados.</p></article>
+            <article class="card"><h3>Jurídico-documental</h3><p>Descrição jurídica, documentos, ônus, ocupação, restrições, locação ativa e direito de preferência.</p></article>
           </div>
           <details open>
             <summary>Status comerciais e operacionais</summary>
@@ -579,7 +597,7 @@
               <div class="badge-row">
                 <span class="badge">disponível</span><span class="badge">reservado</span><span class="badge">em negociação</span><span class="badge">locado</span><span class="badge">vendido</span><span class="badge">suspenso</span><span class="badge">em documentação</span><span class="badge">em vistoria</span>
               </div>
-              <p>Quando o imóvel estiver locado e entrar em venda, o sistema deve acionar regra de direito de preferência do locatário e controlar visitas mediante agendamento.</p>
+              <p>Quando o imóvel estiver locado e entrar em venda, o sistema deve registrar a governança do direito de preferência do locatário e bloquear avanço sem evidência documental.</p>
             </div>
           </details>
           <details>
@@ -587,46 +605,45 @@
             <div class="details-content">
               <ul class="checklist">
                 <li>Matrícula completa, documentos internos, dados pessoais de proprietários, dados bancários e anexos jurídicos.</li>
-                <li>Informações de ocupação sensíveis, chaves, senhas, controles, contatos diretos de moradores e documentos de terceiros.</li>
+                <li>Informações de ocupação sensíveis, acessos, contatos diretos de moradores e documentos de terceiros.</li>
               </ul>
             </div>
           </details>
         </div>
       </section>
 
-      <section id="locacao" data-title="processo locação captação prestação serviços análise cadastral fiador contrato assinatura vistoria chaves administração rescisão">
+      <section id="locacao" data-title="processo locação captação prestação serviços análise cadastral fiador due diligence sala jurídica contrato assinatura compliance encerramento">
         <div class="section-head">
           <small>04</small>
           <h2>Processo de Locação</h2>
-          <p>Fluxo operacional ponta a ponta, desde a captação até encerramento e devolução das chaves.</p>
+          <p>Workflow jurídico de locação com análise, governança documental, due diligence, sala jurídica, assinatura, compliance e encerramento.</p>
         </div>
         <div class="section-body">
           <div class="flow" aria-label="Fluxo de locação">
-            <div class="step"><small>1</small><strong>Captação</strong><span>Cadastro do proprietário e contrato de prestação.</span></div>
-            <div class="step"><small>2</small><strong>Imóvel</strong><span>Cadastro, fotos, valores, condomínio, IPTU e regras.</span></div>
-            <div class="step"><small>3</small><strong>Vitrine</strong><span>Publicação e captação de interessados.</span></div>
-            <div class="step"><small>4</small><strong>Análise</strong><span>Cadastro, renda, documentos, SPC/Serasa e ações quando aplicável.</span></div>
-            <div class="step"><small>5</small><strong>Garantia</strong><span>Fiador ou modalidade aprovada.</span></div>
-            <div class="step"><small>6</small><strong>Contrato</strong><span>Geração, assinatura e controle de pendências.</span></div>
-            <div class="step"><small>7</small><strong>Vistoria</strong><span>Laudo inicial, assinatura e entrega de chaves.</span></div>
-            <div class="step"><small>8</small><strong>Gestão</strong><span>Administração, reajustes, manutenção e notificações.</span></div>
-            <div class="step"><small>9</small><strong>Encerramento</strong><span>Aviso, vistoria final, débitos, chaves e termo.</span></div>
+            <div class="step"><small>1</small><strong>Captação</strong><span>Cadastro do proprietário e mandato de intermediação.</span></div>
+            <div class="step"><small>2</small><strong>Dossiê do imóvel</strong><span>Dados jurídicos, anexos, regras, matrícula e evidências.</span></div>
+            <div class="step"><small>3</small><strong>Interessado</strong><span>Cadastro, proposta e documentos preliminares.</span></div>
+            <div class="step"><small>4</small><strong>Análise</strong><span>Validação cadastral, renda, garantias e pendências.</span></div>
+            <div class="step step-due"><small>DD</small><strong>Due Diligence</strong><span>Análise documental, riscos, certidões, compliance e integrações futuras.</span></div>
+            <div class="step"><small>7</small><strong>Minuta</strong><span>Geração de contrato, anexos e checklist de aprovação.</span></div>
+            <div class="step step-legal"><small>SJ</small><strong>Sala Jurídica</strong><span>Ambiente controlado de negociação, comentários, cláusulas e aprovações.</span></div>
+            <div class="step"><small>8</small><strong>Assinatura</strong><span>Envio, papéis, autenticação, logs e status.</span></div>
+            <div class="step"><small>9</small><strong>Compliance</strong><span>Trilha de auditoria, laudos, evidências e encerramento documental.</span></div>
           </div>
           <div class="timeline" style="margin-top:16px">
-            <div class="event"><time>Entrada</time><p>Entrega das chaves somente após contrato assinado e laudo de vistoria inicial assinado.</p></div>
-            <div class="event"><time>Até 15 dias</time><p>Prazo para contestação da vistoria inicial pelo locatário, conforme regra contratual parametrizável.</p></div>
-            <div class="event"><time>Mensal</time><p>Controle de vencimento, pagamento em dia útil seguinte quando cair em sábado, domingo ou feriado, e régua de atraso.</p></div>
-            <div class="event"><time>12 meses</time><p>Reajuste anual pelo índice configurado, como IPCA, IGP-M ou outro índice contratual.</p></div>
-            <div class="event"><time>Saída</time><p>Aviso prévio de 30 dias, vistoria final com antecedência mínima de 72 horas, apuração de pendências e devolução formal.</p></div>
+            <div class="event"><time>Pré-contrato</time><p>Documentos, garantias e certidões passam por validação preventiva antes da minuta final.</p></div>
+            <div class="event"><time>Sala jurídica</time><p>Partes autorizadas negociam cláusulas, registram comentários e aprovam a versão final com histórico.</p></div>
+            <div class="event"><time>Assinatura</time><p>Contrato e anexos seguem para assinatura eletrônica com logs, papéis e autenticação.</p></div>
+            <div class="event"><time>Conclusão</time><p>Entrega de chaves e laudos ficam registrados como evidências de conclusão do ciclo contratual.</p></div>
           </div>
         </div>
       </section>
 
-      <section id="regras-locacao" data-title="regras locação residencial finalidade sublocação chaves vistoria atraso multa juros seguro contas consumo despesas preferência">
+      <section id="regras-locacao" data-title="regras locação residencial finalidade sublocação laudo assinatura seguro documentos garantias preferência compliance jurídico">
         <div class="section-head">
           <small>05</small>
-          <h2>Regras de Locação</h2>
-          <p>Regras extraídas e convertidas em parâmetros configuráveis para contrato, CRM, alertas e atendimento.</p>
+          <h2>Cláusulas e Controles de Locação</h2>
+          <p>Regras extraídas e convertidas em parâmetros de governança contratual, validação jurídica, assinatura e compliance.</p>
         </div>
         <div class="section-body">
           <div class="grid-2">
@@ -636,8 +653,8 @@
                 <ul class="checklist">
                   <li>Locação residencial, com proibição de alterar finalidade sem autorização escrita do locador.</li>
                   <li>Proibição de sublocação, cessão, comodato ou transferência do contrato sem autorização escrita.</li>
-                  <li>Locatário responde por conservação, limpeza, danos, despesas ordinárias, consumo e uso conforme convenção do condomínio.</li>
-                  <li>Locador responde por despesas extraordinárias e estrutura, conforme Lei do Inquilinato. <span class="badge legal">validar com jurídico</span></li>
+                  <li>Responsabilidades do locatário e do locador devem constar em matriz de obrigações validada juridicamente.</li>
+                  <li>Despesas ordinárias, extraordinárias, uso e estrutura devem ser classificadas conforme Lei do Inquilinato. <span class="badge legal">validar com jurídico</span></li>
                   <li>Benfeitorias dependem de autorização e classificação como necessárias, úteis ou voluptuárias. <span class="badge legal">validar com jurídico</span></li>
                 </ul>
               </div>
@@ -646,12 +663,12 @@
               <summary>Prazos e eventos</summary>
               <div class="details-content">
                 <ul class="checklist">
-                  <li>Chaves condicionadas à assinatura do laudo de vistoria inicial.</li>
+                  <li>Entrega de chaves condicionada à assinatura do contrato e do laudo inicial.</li>
                   <li>Contestação da vistoria inicial: até 15 dias.</li>
                   <li>Seguro obrigatório: contratar em até 48 horas após entrega das chaves, quando previsto.</li>
-                  <li>Transferência de contas de consumo: até 30 dias, quando aplicável.</li>
-                  <li>Desocupação: comunicar por escrito com 30 dias de antecedência.</li>
-                  <li>Vistoria de saída: agendar com antecedência mínima de 72 horas.</li>
+                  <li>Trocas de titularidade e prazos de conclusão devem ficar como evidências documentais do dossiê.</li>
+                  <li>Desocupação e encerramento: registrar aviso, termo, laudo final e aprovações aplicáveis.</li>
+                  <li>Laudo de saída: agendar com antecedência mínima de 72 horas quando previsto.</li>
                 </ul>
               </div>
             </details>
@@ -660,36 +677,36 @@
             <table>
               <thead><tr><th>Regra</th><th>Parâmetro sugerido</th><th>Ação do sistema</th></tr></thead>
               <tbody>
-                <tr><td><strong>Pagamento mensal</strong></td><td>Dia de vencimento configurável; se não útil, próximo dia útil.</td><td>Gerar alerta, registrar status e atualizar régua de cobrança operacional.</td></tr>
-                <tr><td><strong>Atraso</strong></td><td>Multa de 10%, juros de 1% ao mês e correção por índice configurado.</td><td>Calcular valor de referência contratual; não é módulo financeiro completo.</td></tr>
-                <tr><td><strong>Atraso superior a 10 dias</strong></td><td>Comunicação formal e possível negativação.</td><td>Disparar tarefa e notificação. <span class="badge legal">validar com jurídico</span></td></tr>
-                <tr><td><strong>Cobrança extrajudicial ou judicial</strong></td><td>Honorários e custas quando previstos.</td><td>Encaminhar para perfil jurídico e registrar documentos.</td></tr>
-                <tr><td><strong>Infração contratual</strong></td><td>Multa equivalente a 3 aluguéis, quando aplicável.</td><td>Abrir ocorrência, gerar notificação e controlar prazo de saneamento.</td></tr>
-                <tr><td><strong>Rescisão sem multa</strong></td><td>Após período mínimo configurado, mediante aviso prévio de 30 dias.</td><td>Validar carência, calcular multa proporcional quando aplicável. <span class="badge legal">validar com jurídico</span></td></tr>
-                <tr><td><strong>Venda do imóvel locado</strong></td><td>Direito de preferência do locatário.</td><td>Gerar notificação, prazo de resposta e bloqueio de etapa sem registro.</td></tr>
+                <tr><td><strong>Obrigações contratuais</strong></td><td>Datas, responsáveis, condições e documentos comprobatórios.</td><td>Registrar como matriz de obrigações e evidências dentro do workflow jurídico.</td></tr>
+                <tr><td><strong>Penalidades contratuais</strong></td><td>Multa, juros, correção ou honorários apenas como cláusulas e parâmetros jurídicos.</td><td>Exibir em minuta, checklist e parecer. <span class="badge legal">validar com jurídico</span></td></tr>
+                <tr><td><strong>Inadimplemento</strong></td><td>Eventos de descumprimento e prazos de purgação quando previstos.</td><td>Encaminhar para análise jurídica e registrar decisão no workflow.</td></tr>
+                <tr><td><strong>Infração contratual</strong></td><td>Multa equivalente a 3 aluguéis, quando aplicável.</td><td>Abrir ocorrência jurídica, registrar evidências e controlar prazo de manifestação.</td></tr>
+                <tr><td><strong>Rescisão sem multa</strong></td><td>Após período mínimo configurado, mediante aviso prévio de 30 dias.</td><td>Validar carência, cláusula e termo de encerramento. <span class="badge legal">validar com jurídico</span></td></tr>
+                <tr><td><strong>Venda do imóvel locado</strong></td><td>Direito de preferência do locatário.</td><td>Registrar ciência, aceite/recusa e bloquear avanço sem evidência documental.</td></tr>
               </tbody>
             </table>
           </div>
         </div>
       </section>
 
-      <section id="venda" data-title="processo compra venda proposta sinal arras documentos certidões financiamento fgts escritura itbi registro posse titularidade">
+      <section id="venda" data-title="processo compra venda proposta sinal arras documentos certidões due diligence minuta sala jurídica assinatura financiamento fgts escritura itbi registro posse titularidade">
         <div class="section-head">
           <small>06</small>
           <h2>Processo de Compra e Venda</h2>
-          <p>Fluxo voltado à negociação, diligência documental, compromisso, pagamento, escritura e transferência de posse.</p>
+          <p>Workflow contratual de compra e venda com proposta, due diligence, sala jurídica, assinatura, escritura, registro e evidências de conclusão.</p>
         </div>
         <div class="section-body">
           <div class="flow" aria-label="Fluxo de compra e venda">
             <div class="step"><small>1</small><strong>Captação</strong><span>Autorização de venda e cadastro do vendedor.</span></div>
             <div class="step"><small>2</small><strong>Imóvel</strong><span>Matrícula, ônus, condomínio, IPTU e ocupação.</span></div>
             <div class="step"><small>3</small><strong>Lead</strong><span>Comprador, origem, visita e proposta.</span></div>
-            <div class="step"><small>4</small><strong>Negociação</strong><span>Preço total, sinal, saldo e condições.</span></div>
-            <div class="step"><small>5</small><strong>Documentos</strong><span>Certidões de vendedores e imóvel.</span></div>
-            <div class="step"><small>6</small><strong>Financiamento</strong><span>Banco, FGTS, prazos e pendências.</span></div>
-            <div class="step"><small>7</small><strong>Quitação</strong><span>Comprovante, compensação e saldo remanescente.</span></div>
-            <div class="step"><small>8</small><strong>Escritura</strong><span>ITBI, emolumentos, lavratura e registro.</span></div>
-            <div class="step"><small>9</small><strong>Posse</strong><span>Chaves, titularidades e encerramento.</span></div>
+            <div class="step"><small>4</small><strong>Negociação</strong><span>Condições comerciais, obrigações e premissas da proposta.</span></div>
+            <div class="step step-due"><small>DD</small><strong>Due Diligence</strong><span>Certidões, matrícula, ônus, riscos, compliance e APIs futuras.</span></div>
+            <div class="step"><small>6</small><strong>Minuta</strong><span>Geração do compromisso, anexos, premissas e checklist de aprovação.</span></div>
+            <div class="step step-legal"><small>SJ</small><strong>Sala Jurídica</strong><span>Comentários, revisão entre partes, cláusulas e aprovação jurídica.</span></div>
+            <div class="step"><small>8</small><strong>Assinatura</strong><span>Compromisso, papéis, autenticação e logs.</span></div>
+            <div class="step"><small>9</small><strong>Escritura</strong><span>Checklist jurídico de ITBI, emolumentos, lavratura e registro.</span></div>
+            <div class="step"><small>10</small><strong>Encerramento</strong><span>Posse, evidências, titularidades e dossiê final.</span></div>
           </div>
           <div class="grid-2" style="margin-top:16px">
             <article class="card">
@@ -705,8 +722,8 @@
               <h3>Checklist do comprador</h3>
               <ul class="checklist">
                 <li>Analisar documentos recebidos dentro do prazo configurado.</li>
-                <li>Pagar sinal em até 24 horas úteis após aprovação documental, quando previsto.</li>
-                <li>Providenciar recursos próprios, FGTS e/ou financiamento dentro do prazo contratual.</li>
+                <li>Comprovar sinal em até 24 horas úteis após aprovação documental, quando previsto.</li>
+                <li>Providenciar recursos próprios, FGTS e/ou financiamento dentro do prazo contratual como evidência do dossiê.</li>
                 <li>Assumir ITBI, emolumentos, registro e despesas de escritura quando definido no contrato.</li>
               </ul>
             </article>
@@ -717,24 +734,24 @@
       <section id="regras-venda" data-title="regras compra venda preço sinal saldo comissão corretagem inadimplência multa juros correção posse ad corpus assinatura eletrônica">
         <div class="section-head">
           <small>07</small>
-          <h2>Regras de Compra e Venda</h2>
-          <p>Regras parametrizáveis para proposta, compromisso de compra e venda, comissão e transferência de posse.</p>
+          <h2>Cláusulas e Controles de Compra/Venda</h2>
+          <p>Regras parametrizáveis para proposta, compromisso de compra e venda, governança de condições, assinatura e evidências de conclusão.</p>
         </div>
         <div class="section-body">
           <div class="table-wrap">
             <table>
               <thead><tr><th>Regra</th><th>Como registrar</th><th>Automação sugerida</th></tr></thead>
               <tbody>
-                <tr><td><strong>Preço total</strong></td><td>Valor acordado, forma de pagamento, partes pagadoras e contas fictícias mascaradas.</td><td>Conferir se proposta, contrato e recibos têm a mesma composição.</td></tr>
-                <tr><td><strong>Sinal / arras</strong></td><td>Valor, prazo, condição para pagamento e consequência de inadimplemento.</td><td>Alerta de prazo e status de compensação bancária.</td></tr>
-                <tr><td><strong>Saldo remanescente</strong></td><td>Recursos próprios, financiamento e/ou FGTS; prazo para quitação.</td><td>Kanban de financiamento e documentos bancários pendentes.</td></tr>
-                <tr><td><strong>Comprovante e compensação</strong></td><td>Pagamento só considerado quitado após comprovação e compensação.</td><td>Bloquear posse ou etapa seguinte até conferência.</td></tr>
-                <tr><td><strong>Corretagem</strong></td><td>Percentual ou valor fixo, partes beneficiárias e parte responsável.</td><td>Gerar obrigação contratual; sem gestão financeira completa.</td></tr>
-                <tr><td><strong>Rescisão e inadimplência</strong></td><td>Multa, juros de 1% ao mês, correção por IPCA ou índice contratual, honorários e prazo de purgação.</td><td>Abrir tarefa jurídica e notificação. <span class="badge legal">validar com jurídico</span></td></tr>
-                <tr><td><strong>Retenção do sinal</strong></td><td>Retenção de arras em inadimplemento do comprador, quando previsto.</td><td>Exigir aceite jurídico antes de notificar. <span class="badge legal">validar com jurídico</span></td></tr>
-                <tr><td><strong>Imóvel ad corpus</strong></td><td>Venda como corpo certo, sem reajuste por diferença de área, quando aplicável.</td><td>Exibir destaque no contrato. <span class="badge legal">validar com jurídico</span></td></tr>
-                <tr><td><strong>Posse</strong></td><td>Somente após quitação e lavratura da escritura, conforme regra contratual.</td><td>Checklist obrigatório de quitação, escritura e chaves.</td></tr>
-                <tr><td><strong>Tributos e titularidade</strong></td><td>Comprador assume encargos após posse; titularidades em até 30 dias.</td><td>Alertas de troca de IPTU, condomínio e consumo; multa diária quando prevista.</td></tr>
+                <tr><td><strong>Preço total</strong></td><td>Valor acordado, forma de comprovação, partes responsáveis e condições.</td><td>Conferir consistência entre proposta, minuta e anexos.</td></tr>
+                <tr><td><strong>Sinal / arras</strong></td><td>Valor, prazo, condição de comprovação e consequência de inadimplemento.</td><td>Controlar prazo como obrigação contratual e evidência documental.</td></tr>
+                <tr><td><strong>Saldo remanescente</strong></td><td>Recursos próprios, financiamento e/ou FGTS; prazo para quitação.</td><td>Kanban jurídico de financiamento e documentos bancários pendentes.</td></tr>
+                <tr><td><strong>Comprovante e compensação</strong></td><td>Quitação reconhecida após comprovação e compensação.</td><td>Bloquear posse ou etapa seguinte até validação documental.</td></tr>
+                <tr><td><strong>Corretagem</strong></td><td>Percentual ou valor fixo, partes beneficiárias e parte responsável.</td><td>Registrar cláusula, aprovações e evidências de aceite.</td></tr>
+                <tr><td><strong>Rescisão e inadimplência</strong></td><td>Multa, juros, correção, honorários e prazo de purgação quando previstos.</td><td>Abrir análise jurídica e registrar decisão. <span class="badge legal">validar com jurídico</span></td></tr>
+                <tr><td><strong>Retenção do sinal</strong></td><td>Retenção de arras em inadimplemento do comprador, quando previsto.</td><td>Exigir aprovação jurídica antes de qualquer comunicação formal. <span class="badge legal">validar com jurídico</span></td></tr>
+                <tr><td><strong>Imóvel ad corpus</strong></td><td>Venda como corpo certo, sem revisão de preço por diferença de área, quando aplicável.</td><td>Exibir destaque no contrato. <span class="badge legal">validar com jurídico</span></td></tr>
+                <tr><td><strong>Posse</strong></td><td>Somente após quitação e lavratura da escritura, conforme regra contratual.</td><td>Checklist obrigatório de quitação, escritura, laudos e entrega.</td></tr>
+                <tr><td><strong>Tributos e titularidade</strong></td><td>Comprador assume encargos após posse; titularidades em até 30 dias quando previsto.</td><td>Registrar obrigação e evidência de conclusão no dossiê contratual.</td></tr>
                 <tr><td><strong>Assinatura eletrônica</strong></td><td>Logs, IP, documento, SMS/e-mail, hash, data limite e status.</td><td>Guardar trilha de auditoria vinculada ao contrato.</td></tr>
               </tbody>
             </table>
@@ -742,64 +759,64 @@
         </div>
       </section>
 
-      <section id="servicos" data-title="prestação serviços imobiliária proprietário publicidade idoneidade contratos vistorias repasse reajuste garantias limitações responsabilidade">
+      <section id="servicos" data-title="governança jurídica prestação serviços imobiliária proprietário idoneidade contratos laudos garantias limitações responsabilidade">
         <div class="section-head">
           <small>08</small>
-          <h2>Prestação de Serviços da Imobiliária</h2>
-          <p>Contrato entre proprietário e imobiliária deve virar um módulo de mandato operacional, responsabilidades e limites.</p>
+          <h2>Governança Jurídica da Intermediação</h2>
+          <p>Contrato entre proprietário e imobiliária vira um mandato jurídico-digital para delimitar poderes, responsabilidades, escopo, evidências e aprovações.</p>
         </div>
         <div class="section-body">
           <div class="grid-2">
             <article class="card">
-              <h3>Responsabilidades da imobiliária</h3>
+              <h3>Responsabilidades na governança</h3>
               <ul class="checklist">
-                <li>Promover, divulgar e publicitar o imóvel.</li>
+                <li>Promover e documentar a intermediação imobiliária.</li>
                 <li>Verificar idoneidade de interessados em bureaus e consultas judiciais quando aplicável.</li>
-                <li>Elaborar contratos, vistorias, formulários e informativos do processo.</li>
-                <li>Administrar a locação, controlar reajustes, garantias, notificações e atendimento.</li>
-                <li>Intermediar partes, cobranças operacionais, recebimentos e repasses quando contratados.</li>
-                <li>Gerar extratos, informes de IR e relatórios quando no escopo contratado.</li>
-                <li>Gerir anúncios e status de publicação.</li>
+                <li>Elaborar e versionar contratos, laudos, formulários e informativos do processo.</li>
+                <li>Controlar garantias, anexos, aprovações e pendências até a assinatura.</li>
+                <li>Intermediar partes na sala jurídica com histórico e colaboração controlada.</li>
+                <li>Registrar evidências e relatórios jurídicos do ciclo contratual.</li>
+                <li>Gerir publicação e captação apenas como origem de leads para o workflow contratual.</li>
               </ul>
             </article>
             <article class="card">
-              <h3>Responsabilidades do proprietário</h3>
+              <h3>Responsabilidades do contratante</h3>
               <ul class="checklist">
-                <li>Entregar chaves, controles e meios de acesso à imobiliária.</li>
-                <li>Remover anúncios antigos e controlar cópias de chaves em terceiros.</li>
-                <li>Informar mudanças de IPTU, condomínio e encargos com antecedência.</li>
-                <li>Prestar informações relevantes sobre o imóvel, riscos, regras e pendências.</li>
-                <li>Não receber valores diretamente do inquilino sem autorização da imobiliária.</li>
-                <li>Informar conta de repasse e manter dados atualizados.</li>
-                <li>Acompanhar condomínio, IPTU e encargos quando a imobiliária apenas repassar informações.</li>
+                <li>Fornecer documentos, autorizações e informações relevantes sobre o imóvel.</li>
+                <li>Remover anúncios conflitantes quando houver exclusividade ou restrição contratual.</li>
+                <li>Informar alterações relevantes em tributos, condomínio, ocupação ou restrições jurídicas.</li>
+                <li>Declarar riscos, pendências, regras e limitações que impactem a negociação.</li>
+                <li>Manter dados cadastrais e poderes de representação atualizados.</li>
+                <li>Participar das aprovações na sala jurídica quando solicitado.</li>
+                <li>Assinar instrumentos e anexos dentro dos prazos definidos no workflow.</li>
               </ul>
             </article>
           </div>
-          <div class="note">Limitações de responsabilidade da imobiliária devem ser destacadas no contrato e no sistema, especialmente quanto a atos de locatários, danos no imóvel, comportamento perante vizinhos e inadimplemento de encargos pagos diretamente. <span class="badge legal">validar com jurídico</span></div>
+          <div class="note">Limitações de responsabilidade devem ser destacadas no contrato e no sistema, separando intermediação, governança documental e atividades que pertencem a terceiros ou a outros sistemas fora do escopo DRATOS. <span class="badge legal">validar com jurídico</span></div>
         </div>
       </section>
 
-      <section id="calculos" data-title="cálculos contratuais sem gestão financeira aluguel condomínio iptu pacote taxa comissão multa juros correção honorários repasses boletos inadimplência">
+      <section id="calculos" data-title="parâmetros contratuais obrigações jurídicas cláusulas multa juros correção honorários compliance">
         <div class="section-head">
           <small>09</small>
-          <h2>Cálculos Contratuais, Sem Gestão Financeira</h2>
-          <p>Esta seção não implementa financeiro completo; apenas define valores de referência, fórmulas contratuais, conferência e eventos para integrações futuras.</p>
+          <h2>Parâmetros e Matriz de Obrigações</h2>
+          <p>Esta seção registra condições contratuais, cláusulas, obrigações, critérios de conferência e evidências para governança jurídica.</p>
         </div>
         <div class="section-body">
           <div class="grid-3">
             <article class="card">
               <h3>Locação</h3>
-              <p>Aluguel, condomínio, IPTU, pacote mensal, vencimento, multa por atraso, juros, correção monetária e reajuste anual.</p>
-              <div class="badge-row"><span class="badge neutral">referência contratual</span><span class="badge legal">validar com jurídico</span></div>
+              <p>Valores de referência, garantias, prazos, multas, juros e índices apenas como metadados da minuta e matriz de obrigações.</p>
+              <div class="badge-row"><span class="badge neutral">cláusula contratual</span><span class="badge legal">validar com jurídico</span></div>
             </article>
             <article class="card">
               <h3>Serviços imobiliários</h3>
-              <p>Taxa de corretagem, taxa de administração, base de cálculo, vigência e multa de rescisão do contrato de prestação.</p>
+              <p>Corretagem, escopo, responsabilidades, vigência e rescisão como cláusulas do mandato de intermediação.</p>
               <div class="badge-row"><span class="badge neutral">sem contabilidade</span></div>
             </article>
             <article class="card">
               <h3>Compra e venda</h3>
-              <p>Preço, sinal, saldo, comissão de corretagem, multa, juros, correção, honorários e multa diária por descumprimento.</p>
+              <p>Preço, sinal, saldo, corretagem, penalidades, honorários e multa diária como parâmetros para revisão jurídica.</p>
               <div class="badge-row"><span class="badge neutral">sem contas a pagar</span></div>
             </article>
           </div>
@@ -807,15 +824,15 @@
             <summary>Escopo excluído por decisão do projeto</summary>
             <div class="details-content">
               <ul class="checklist">
-                <li>Conciliação bancária, livro caixa, contabilidade, fluxo de caixa, DRE, repasses financeiros automatizados e emissão fiscal.</li>
-                <li>Boletos, comprovantes, extratos e régua de cobrança podem existir como registros operacionais ou integrações futuras, não como módulo financeiro nesta versão.</li>
+                <li>Execução contábil, conciliação, liquidação, emissão fiscal e rotinas de sistemas externos.</li>
+                <li>Comprovantes e condições de pagamento existem somente como evidências contratuais e critérios de aprovação.</li>
               </ul>
             </div>
           </details>
         </div>
       </section>
 
-      <section id="documentos" data-title="contratos documentos modelos proposta locação venda vistoria chaves rescisão notificação direito preferência recibos checklist">
+      <section id="documentos" data-title="contratos documentos modelos proposta locação venda laudos termos rescisão ciência direito preferência checklist">
         <div class="section-head">
           <small>10</small>
           <h2>Contratos e Documentos</h2>
@@ -824,43 +841,43 @@
         <div class="section-body">
           <div class="grid-3">
             <article class="card"><h3>Contratos principais</h3><ul><li>Locação residencial</li><li>Prestação de serviços imobiliários</li><li>Compromisso de compra e venda</li><li>Autorização de venda</li><li>Autorização de locação</li></ul></article>
-            <article class="card"><h3>Propostas e termos</h3><ul><li>Proposta de compra</li><li>Proposta de locação</li><li>Termo de entrega de chaves</li><li>Termo de rescisão</li><li>Recibos operacionais</li></ul></article>
-            <article class="card"><h3>Vistorias e notificações</h3><ul><li>Laudo inicial</li><li>Laudo final</li><li>Notificação de atraso</li><li>Notificação de desocupação</li><li>Notificação de direito de preferência</li><li>Checklist de documentos</li></ul></article>
+            <article class="card"><h3>Propostas e termos</h3><ul><li>Proposta de compra</li><li>Proposta de locação</li><li>Termo de entrega de chaves</li><li>Termo de rescisão</li><li>Termos de ciência e aceite</li></ul></article>
+            <article class="card"><h3>Laudos e comunicações</h3><ul><li>Laudo inicial</li><li>Laudo final</li><li>Comunicação de pendência contratual</li><li>Comunicação de desocupação</li><li>Comunicação de direito de preferência</li><li>Checklist de due diligence</li></ul></article>
           </div>
           <div class="note">Modelos devem ser versionados, com variáveis controladas, trilha de alteração e bloqueio de edição após assinatura. Minutas finais e cláusulas sensíveis devem passar por validação jurídica.</div>
         </div>
       </section>
 
-      <section id="vistorias" data-title="vistorias manutenção fotos cômodos danos contestação reparo urgente 48 horas vistoria final orçamento recusa chaves">
+      <section id="vistorias" data-title="evidências laudos fotos cômodos contestação assinatura encerramento compliance documental chaves">
         <div class="section-head">
           <small>11</small>
-          <h2>Vistorias e Manutenção</h2>
-          <p>O laudo é peça central para entrega de chaves, contestação, reparos, saída e eventual cobrança por danos.</p>
+          <h2>Laudos, Evidências e Encerramento</h2>
+          <p>O laudo é peça central de prova e governança para entrega de chaves, contestação, validação de estado e encerramento documental.</p>
         </div>
         <div class="section-body">
           <div class="flow">
-            <div class="step"><small>1</small><strong>Vistoria inicial</strong><span>Cômodos, itens, fotos e estado de conservação.</span></div>
+            <div class="step"><small>1</small><strong>Laudo inicial</strong><span>Cômodos, itens, fotos e estado de conservação.</span></div>
             <div class="step"><small>2</small><strong>Assinatura</strong><span>Locatário assina antes da entrega das chaves.</span></div>
             <div class="step"><small>3</small><strong>Contestação</strong><span>Prazo de até 15 dias para apontamentos.</span></div>
-            <div class="step"><small>4</small><strong>Manutenção</strong><span>Ocorrências, urgência, responsáveis e orçamento.</span></div>
-            <div class="step"><small>5</small><strong>Saída</strong><span>Agendamento mínimo de 72 horas.</span></div>
-            <div class="step"><small>6</small><strong>Comparação</strong><span>Entrada versus saída, reparos e indenização.</span></div>
+            <div class="step"><small>4</small><strong>Evidências</strong><span>Anexos, fotos, comentários e aprovações.</span></div>
+            <div class="step"><small>5</small><strong>Laudo final</strong><span>Agendamento mínimo de 72 horas quando previsto.</span></div>
+            <div class="step"><small>6</small><strong>Encerramento</strong><span>Comparação documental, aceite e termo final.</span></div>
           </div>
           <div class="grid-2" style="margin-top:16px">
             <article class="card">
-              <h3>Regras de manutenção</h3>
+              <h3>Governança de evidências</h3>
               <ul class="checklist">
                 <li>Registrar fotos, cômodo, item, gravidade, origem provável e responsável sugerido.</li>
-                <li>Comunicação em até 48 horas para casos previstos contratualmente ou urgentes.</li>
-                <li>Reparos estruturais tendem a responsabilidade do locador; uso, conservação e danos tendem a responsabilidade do locatário. <span class="badge legal">validar com jurídico</span></li>
+                <li>Registrar ciência, comentários, aceite, recusa e histórico de alteração do laudo.</li>
+                <li>Responsabilidades por estrutura, uso, conservação e danos devem ser classificadas juridicamente. <span class="badge legal">validar com jurídico</span></li>
               </ul>
             </article>
             <article class="card">
-              <h3>Regras de saída</h3>
+              <h3>Encerramento contratual</h3>
               <ul class="checklist">
-                <li>Vistoria final compara laudo inicial, contestação e registros de manutenção.</li>
-                <li>Orçamento de reparos e cobrança/indenização quando houver dano imputável.</li>
-                <li>Recusa operacional de chaves quando existirem pendências impeditivas previstas no contrato. <span class="badge legal">validar com jurídico</span></li>
+                <li>Laudo final compara laudo inicial, contestação e registros documentais.</li>
+                <li>Apuração de responsabilidades fica como análise jurídica e evidência de decisão.</li>
+                <li>Entrega ou recusa de chaves deve seguir condição contratual validada e documentada. <span class="badge legal">validar com jurídico</span></li>
               </ul>
             </article>
           </div>
@@ -881,7 +898,7 @@
             </article>
             <article class="card">
               <h3>Página do imóvel</h3>
-              <p>Fotos, vídeo, tour, mapa aproximado, características, condomínio, IPTU, venda, aluguel, pacote, regras e botão de interesse.</p>
+              <p>Fotos, vídeo, tour, mapa aproximado, características, regras, valores de referência e botão de interesse.</p>
             </article>
             <article class="card">
               <h3>Publicação</h3>
@@ -892,31 +909,31 @@
         </div>
       </section>
 
-      <section id="crm" data-title="crm negociação leads interessados origem funil venda locação visitas propostas histórico tarefas responsável pendências aprovações perda contrato">
+      <section id="crm" data-title="workflow clm negociação leads interessados origem funil venda locação propostas histórico tarefas responsável pendências aprovações perda contrato sala jurídica due diligence">
         <div class="section-head">
           <small>13</small>
-          <h2>CRM e Negociação</h2>
-          <p>CRM simples para transformar visita e proposta em contrato assinado, com trilha de contato e pendências.</p>
+          <h2>Workflow CLM e Negociação</h2>
+          <p>Pipeline jurídico para transformar lead e proposta em contrato aprovado, assinado e auditável, com rastreabilidade de decisões.</p>
         </div>
         <div class="section-body">
           <div class="grid-2">
             <article class="card">
               <h3>Funil de locação</h3>
-              <div class="badge-row"><span class="badge">lead</span><span class="badge">visita</span><span class="badge">proposta</span><span class="badge">análise</span><span class="badge">garantia</span><span class="badge">contrato</span><span class="badge">vistoria</span><span class="badge">chaves</span></div>
+              <div class="badge-row"><span class="badge">lead</span><span class="badge">proposta</span><span class="badge">análise</span><span class="badge">garantia</span><span class="badge required">due diligence</span><span class="badge optional">sala jurídica</span><span class="badge">assinatura</span><span class="badge">encerramento</span></div>
             </article>
             <article class="card">
               <h3>Funil de venda</h3>
-              <div class="badge-row"><span class="badge">lead</span><span class="badge">visita</span><span class="badge">proposta</span><span class="badge">sinal</span><span class="badge">documentos</span><span class="badge">financiamento</span><span class="badge">escritura</span><span class="badge">posse</span></div>
+              <div class="badge-row"><span class="badge">lead</span><span class="badge">proposta</span><span class="badge">condições</span><span class="badge required">due diligence</span><span class="badge optional">sala jurídica</span><span class="badge">assinatura</span><span class="badge">escritura</span><span class="badge">dossiê final</span></div>
             </article>
           </div>
           <div class="table-wrap" style="margin-top:14px">
             <table>
               <thead><tr><th>Entidade</th><th>Campos</th><th>Resultado esperado</th></tr></thead>
               <tbody>
-                <tr><td><strong>Lead</strong></td><td>Origem, imóvel, interesse, contato, consentimento LGPD e responsável.</td><td>Captura de interessados pela vitrine, WhatsApp, telefone ou parceiro.</td></tr>
-                <tr><td><strong>Visita</strong></td><td>Data, participantes, corretor, observações e feedback.</td><td>Histórico de atendimento e próximos passos.</td></tr>
+                <tr><td><strong>Lead</strong></td><td>Origem, imóvel, interesse, contato, consentimento LGPD e responsável.</td><td>Entrada para o workflow contratual com rastreabilidade.</td></tr>
+                <tr><td><strong>Interação</strong></td><td>Data, participantes, corretor, observações e feedback.</td><td>Histórico de relacionamento e próximos passos jurídicos.</td></tr>
                 <tr><td><strong>Proposta</strong></td><td>Valor, condições, validade, documentos pendentes e aprovações.</td><td>Negociação rastreável até aceite, recusa ou perda.</td></tr>
-                <tr><td><strong>Tarefa</strong></td><td>Responsável, prazo, prioridade, vínculo com imóvel/lead/contrato.</td><td>Controle operacional e alertas.</td></tr>
+                <tr><td><strong>Tarefa</strong></td><td>Responsável, prazo, prioridade, vínculo com imóvel/lead/contrato.</td><td>Controle de workflow, aprovações e compliance.</td></tr>
                 <tr><td><strong>Perda</strong></td><td>Motivo, etapa, concorrente ou restrição.</td><td>Indicador de melhoria comercial.</td></tr>
               </tbody>
             </table>
@@ -924,7 +941,7 @@
         </div>
       </section>
 
-      <section id="perfis" data-title="permissões perfis administrador corretor financeiro jurídico vistoriador proprietário locatário comprador vendedor parceiro visitante">
+      <section id="perfis" data-title="permissões perfis administrador corretor jurídico compliance vistoriador proprietário locatário comprador vendedor parceiro visitante">
         <div class="section-head">
           <small>14</small>
           <h2>Permissões e Perfis</h2>
@@ -937,8 +954,8 @@
               <tbody>
                 <tr><td><strong>Administrador</strong></td><td>Tudo, exceto dados restritos por política.</td><td>Configurações, usuários, modelos, cadastros e permissões.</td><td>Aprova exceções operacionais.</td></tr>
                 <tr><td><strong>Corretor</strong></td><td>Vitrine, leads, imóveis liberados, propostas.</td><td>Leads, visitas, propostas e anúncios conforme permissão.</td><td>Assina como corretor quando previsto.</td></tr>
-                <tr><td><strong>Jurídico</strong></td><td>Contratos, documentos, certidões e pendências.</td><td>Minutas, pareceres, checklists e notificações.</td><td>Aprova cláusulas sensíveis e rescisões.</td></tr>
-                <tr><td><strong>Vistoriador</strong></td><td>Imóveis e vistorias atribuídas.</td><td>Laudos, fotos, itens, danos e orçamentos.</td><td>Conclui laudo técnico.</td></tr>
+                <tr><td><strong>Jurídico</strong></td><td>Contratos, documentos, certidões e pendências.</td><td>Minutas, pareceres, checklists e comunicações.</td><td>Aprova cláusulas sensíveis e rescisões.</td></tr>
+                <tr><td><strong>Vistoriador</strong></td><td>Imóveis e laudos atribuídos.</td><td>Laudos, fotos, itens, apontamentos e evidências.</td><td>Conclui laudo técnico.</td></tr>
                 <tr><td><strong>Proprietário / vendedor</strong></td><td>Imóveis próprios, status, documentos solicitados e contratos vinculados.</td><td>Dados pessoais, documentos, informações do imóvel.</td><td>Assina contratos e termos.</td></tr>
                 <tr><td><strong>Locatário / comprador</strong></td><td>Processos próprios, documentos pendentes, contratos e laudos.</td><td>Cadastro, anexos, aceite de vistoria e solicitações.</td><td>Assina contratos, laudos e termos.</td></tr>
                 <tr><td><strong>Parceiro / imobiliária</strong></td><td>Leads e negociações compartilhadas.</td><td>Propostas e contatos conforme acordo.</td><td>Assina como intermediador quando previsto.</td></tr>
@@ -949,18 +966,18 @@
         </div>
       </section>
 
-      <section id="alertas" data-title="alertas automações vencimento aluguel atraso reajuste seguro garantia vistoria certidões documentos financiamento assinaturas repasse desocupação titularidade preferência">
+      <section id="alertas" data-title="compliance automações prazos contrato assinatura garantia laudo certidões documentos financiamento desocupação titularidade preferência due diligence sala jurídica">
         <div class="section-head">
           <small>15</small>
-          <h2>Alertas e Automações</h2>
-          <p>Automação orientada por prazos contratuais e etapas, sem substituir validações humanas em pontos jurídicos.</p>
+          <h2>Prazos, Compliance e Automações</h2>
+          <p>Automação orientada por prazos contratuais, evidências, aprovações e etapas de governança, sem substituir validações humanas em pontos jurídicos.</p>
         </div>
         <div class="section-body">
           <div class="grid-4">
-            <article class="card"><h3>Locação</h3><p>Vencimento, atraso, seguro vencendo, garantia vencendo, reajuste anual, contestação de vistoria e desocupação.</p></article>
-            <article class="card"><h3>Compra e venda</h3><p>Envio de certidões, análise documental, financiamento, sinal, saldo, escritura, posse e titularidade.</p></article>
+            <article class="card"><h3>Locação</h3><p>Garantia vencendo, seguro pendente quando previsto, contestação de laudo, sala jurídica, assinatura e encerramento.</p></article>
+            <article class="card"><h3>Compra e venda</h3><p>Envio de certidões, due diligence, análise documental, financiamento, escritura, posse e dossiê final.</p></article>
             <article class="card"><h3>Contratos</h3><p>Assinaturas pendentes, documento recusado, prazo expirado, finalização e armazenamento de log.</p></article>
-            <article class="card"><h3>Atendimento</h3><p>Vistoria agendada, manutenção urgente, troca de titularidade, direito de preferência e tarefas em atraso.</p></article>
+            <article class="card"><h3>Governança</h3><p>Aprovação jurídica, comentários pendentes, troca de titularidade como evidência, direito de preferência e tarefas vencidas.</p></article>
           </div>
         </div>
       </section>
@@ -1023,24 +1040,24 @@
               <h3>MVP inicial</h3>
               <ul class="checklist">
                 <li>Cadastros base de pessoas, papéis, imóveis, documentos e condomínios.</li>
-                <li>Gestão de imóveis com status, características, anexos e controle de publicação.</li>
+                <li>Dossiê jurídico de imóveis com status, características, anexos, certidões e controle de publicação.</li>
                 <li>Vitrine digital com busca, cards, detalhe do imóvel, formulário de interesse e WhatsApp.</li>
-                <li>Leads e CRM simples para visitas, propostas, tarefas e histórico.</li>
-                <li>Processo de locação com análise, garantia, contrato, vistoria inicial e entrega de chaves.</li>
-                <li>Processo de venda com proposta, sinal, checklist documental, financiamento e escritura.</li>
-                <li>Modelos de contratos/documentos e assinatura eletrônica integrada ou registrada manualmente.</li>
-                <li>Alertas essenciais de assinatura, vistoria, reajuste, garantia, seguro, documentos e prazos de venda.</li>
+                <li>Workflow CLM simples para leads, propostas, tarefas, histórico, due diligence e sala jurídica.</li>
+                <li>Processo de locação com análise, garantia, due diligence, minuta, assinatura, laudo e encerramento.</li>
+                <li>Processo de venda com proposta, checklist documental, due diligence, sala jurídica, financiamento e escritura.</li>
+                <li>Modelos de contratos/documentos, versionamento e assinatura eletrônica integrada ou registrada manualmente.</li>
+                <li>Alertas essenciais de assinatura, laudos, garantias, certidões, sala jurídica e prazos de venda.</li>
               </ul>
             </article>
             <article class="card">
               <h3>Fases futuras</h3>
               <ul class="checklist">
-                <li>Integração com portais imobiliários, bancos, assinatura eletrônica e WhatsApp oficial.</li>
+                <li>Integração com portais imobiliários, bancos, assinatura eletrônica, WhatsApp oficial e bureaus de risco.</li>
                 <li>Consultas automatizadas a bureaus, cartórios, prefeitura e condomínios.</li>
-                <li>Aplicativo do vistoriador com fotos offline, comparação visual e orçamento.</li>
-                <li>Portal do proprietário, locatário, comprador e vendedor com autosserviço.</li>
-                <li>Automação avançada de notificações, direito de preferência, minutas e aprovações jurídicas.</li>
-                <li>Módulo financeiro completo apenas em fase separada, caso volte ao escopo do produto.</li>
+                <li>Aplicativo de laudos com fotos offline, comparação visual e assinatura.</li>
+                <li>Portal do proprietário, locatário, comprador e vendedor para colaboração jurídica controlada.</li>
+                <li>Automação avançada de comunicações jurídicas, direito de preferência, minutas e aprovações.</li>
+                <li>Módulos externos ao ciclo de inteligência contratual permanecem fora do produto DRATOS.</li>
               </ul>
             </article>
           </div>
